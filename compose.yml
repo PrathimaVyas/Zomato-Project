@@ -6,4 +6,5 @@ services:
     image: prathima77/zomato-app:zomatoimage
     ports:
       - "3000:3000"
-    restart: unless-stopped
+    deploy:
+      replicas: 3
